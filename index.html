@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="CSS/style.css" rel="stylesheet">
+    <!-- <style>
+        body {
+            background-color: #1717c5;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        }
+
+        .body-wrap {
+            padding: 30px 10px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #fff;
+            font-size: 28px;
+        }
+
+        .Nav-sec {
+            position: relative;
+            width: 700px;
+            margin: auto;
+
+        }
+
+        .nav-bar {
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        .nav-bar li {
+            list-style: none;
+            margin-left: -40px;
+            font-size: 13px;
+            position: relative;
+            font-weight: 700;
+            color: #fff;
+            opacity: 0.6;
+        }
+
+        .nav-bar .active {
+            opacity: 1;
+        }
+
+        .border-arrow {
+            width: 390px;
+            border-top: 5px dotted #fff;
+            margin: auto;
+            transform: scaleX(1.5);
+        }
+
+        .nav-bar li.active::before {
+            content: "";
+            background: #ffb300;
+            height: 15px;
+            width: 15px;
+            border-radius: 50%;
+            position: absolute;
+            left: 50%;
+            top: -25px;
+        }
+
+        .border-arrow::after {
+            content: "";
+            height: 40px;
+            width: 40px;
+            background-image: url("arrow.png");
+            position: absolute;
+            right: -28px;
+            background-size: contain;
+            top: -20px;
+            background-repeat: no-repeat;
+
+        }
+
+        .form-input {
+            max-width: 480px;
+            margin: auto;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            background: none;
+            border: 2px solid rgb(98 129 184);
+            min-height: 40px;
+            border-radius: 5px;
+            max-width: 440px;
+            color: #fff;
+            margin-top: 5px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        label {
+            font-size: 12px;
+            color: #eee;
+            opacity: 0.8;
+            padding-left: 10px;
+            ;
+        }
+
+        input::placeholder {
+            color: #eee;
+            font-size: 13px;
+            opacity: 0.5;
+        }
+
+        input[type="radio"] {
+            height: 35px;
+            width: 100%;
+            cursor: pointer;
+            max-width: 20px;
+            display: block;
+            background: none;
+        }
+
+          .borde-r {
+
+            margin-left: 10px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .form-input {
+            margin-top: 20px;
+        }
+
+        .d-flex {
+            display: flex;
+            WIDTH: 100%;
+            ALIGN-ITEMS: CENTER;
+        }
+
+        .j-l {
+            justify-content: flex-end;
+        }
+
+        input:focus {
+            border-color: #1717c5;
+            box-shadow: 0px 0px 4px -1px #eee;
+        }
+
+        .d-grid {
+            DISPLAY: GRID;
+            GRID-TEMPLATE-COLUMNS: 25px AUTO;
+            WIDTH: 100%;
+            MAX-WIDTH: 150PX;
+            MARGIN: AUTO;
+            ALIGN-ITEMS: CENTER;
+        }
+
+        .label {
+            min-width: 200px;
+            color: #fff;
+            font-size: 14px;
+            opacity: 0.6;
+
+        }
+
+        .form-input button {
+            font-weight: bold;
+            background-color: white;
+            border: none;
+            border-radius: 0.5em;
+            padding: 1em;
+            width: 10em;
+            margin: auto;
+            cursor: pointer;
+            border:2px solid #fff;
+            transition: 0.3s all ease-in-out;
+
+            display: block;
+        }
+
+        .form-input button:hover{
+            background-color: #1717c5;
+            border:2px solid #fff;
+            color: #fff;
+            transition: 0.3s all ease-in-out;
+        }
+        .radio-toolbar label {
+            display: inline-block;
+            padding: 10px 20px 10px 30px;
+            font-family: sans-serif, Arial;
+            font-size: 13px;
+            border: 2px solid #4869b2;
+            box-shadow: 0px 0px 0px 1px #4869b2;
+            border-radius: 5px;
+            z-index: -1;
+            cursor: pointer;
+            position: absolute;
+            border-radius: 5px;
+        }
+
+
+        .radio-toolbar input[type="radio"]:focus+label {
+            border: 2px dashed #444;
+        }
+
+        .radio-toolbar input[type="radio"]:checked+label {
+            border-color: #5151ac;
+        }
+    </style> -->
+</head>
+
+<body>
+    <div class="body-wrap">
+        <div class="section-header">
+            <h2>Send Us An Enquiry</h2>
+            <div class="Nav-sec">
+                <p class="border-arrow"></p>
+                <ul class="nav-bar">
+                    <li class="active">Your Information</li>
+                    <li>Your Information</li>
+                    <li> Information</li>
+                    <li>Your </li>
+                    <li> Information</li>
+                </ul>
+
+            </div>
+        </div>
+        <div class="Sec-form">
+            <form action="#">
+                <div class="form-input">
+                    <label for="name">Your Name</label>
+                    <input name="name" type="text" placeholder="Enter Your Name">
+                </div>
+                <div class="form-input d-flex">
+                    <p class="label" ">Type of Bussiness</p>
+                    <div class=" d-flex radio-toolbar j-l">
+                    <div class=" borde-r d-flex">
+                        <input type="radio" id="radioIndividual" name="TYPEradio" value="INDIVIDUAL">
+                        <label for="radioIndividual">INDIVIDUAL</label>
+                    </div>
+                    <div class=" borde-r d-flex">
+                        <input type="radio" id="radiocorporate" name="TYPEradio" value="CORPORATE">
+                        <label for="radiocorporate">CORPORATE</label>
+                    </div>
+                </div>
+        </div>
+        <div class="form-input d-flex">
+            <p class="label" style="min-width:300px">Do you already have Podcast?</p>
+            <div class="d-flex radio-toolbar  j-l">
+                <div class=" borde-r d-flex">
+                    <input type="radio" id="radioYes" name="podcastradio" value="Yes">
+                    <label for="radioApple">Yes</label>
+                </div>
+                <div class=" borde-r d-flex">
+                    <input type="radio" id="radioNo" name="podcastradio" value="No">
+                    <label for="radioNo">No</label>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="form-input">
+            <label for="name">Mobile no</label>
+            <input name="name" type="text" placeholder="+91">
+        </div>
+
+        <div class="form-input">
+            <label for="name">Email ID</label>
+            <input name="name" type="text" placeholder="Enter email id">
+        </div>
+        <div class="form-input">
+            <button type="button">NEXT</button>
+
+        </div>
+        </form>
+    </div>
+
+    </div>
+
+
+</body>
+
+</html>
